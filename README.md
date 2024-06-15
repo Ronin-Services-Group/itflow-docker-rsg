@@ -1,5 +1,5 @@
 # About this Image
-This is the Docker image of [ITFlow](https://github.com/itflow-org/itflow). This image was created by a community member, we don't "officially" support Docker.
+This is a fork of the Docker image of [ITFlow](https://github.com/itflow-org/itflow). 
 
 Please read the wiki: https://docs.itflow.org
 
