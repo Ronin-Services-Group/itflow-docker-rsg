@@ -5,18 +5,18 @@ Please read the wiki: https://docs.itflow.org
 
 # Usage
 ## ITFlow Only (no Reverse Proxy) 
-1. Copy [docker-compose.yml](https://raw.githubusercontent.com/itflow-org/itflow-docker/main/docker-compose.yml) to a directory.
+1. Copy [docker-compose.yml](https://raw.githubusercontent.com/Ronin-Services-Group/itflow-docker-rsg/main/docker-compose.yml) to a directory.
 2. Within docker-compose.yml, adjust the ```environment:``` variables such as ITFLOW_NAME, ITFLOW_URL and ITFLOW_REPO (to your own MSPs fork).
-3. Copy the [.env](https://raw.githubusercontent.com/itflow-org/itflow-docker/main/.env) file to the same directory.
+3. Copy the [.env](https://raw.githubusercontent.com/Ronin-Services-Group/itflow-docker-rsg/main/.env) file to the same directory.
 > Enter your timezone, root domain and database password within this file. You can avoid this step entirely by adding the information to your docker-compose.yml file directly instead. Or being safe, by using docker secrets.
 4. Run ```docker compose up -d```
 5. Go to your domain. You should be redirected to setup.php. Enter server information correlated to your set up .env and docker-compose.yml files.
 > Defaults:  Username: itflow, Password: $ITFLOW_DB_PASS from .env, Database: itflow, Server: itflow-db 
 
 ## Complete [Traefik](https://doc.traefik.io/traefik/getting-started/quick-start/) Solution (Reverse Proxy)
-1. Copy the traefik [docker-compose.yml](https://raw.githubusercontent.com/itflow-org/itflow-docker/main/traefik-complete/docker-compose.yml) to a directory.
+1. Copy the traefik [docker-compose.yml](https://raw.githubusercontent.com/Ronin-Services-Group/itflow-docker-rsg/main/traefik-complete/docker-compose.yml) to a directory.
 2. Within docker-compose.yml, adjust the ```environment:``` variables such as ITFLOW_NAME, ITFLOW_URL and ITFLOW_REPO (to your own MSPs fork).
-3. Copy the [.env](https://raw.githubusercontent.com/itflow-org/itflow-docker/main/traefik-complete/.env) file to the same directory. 
+3. Copy the [.env](https://raw.githubusercontent.com/Ronin-Services-Group/itflow-docker-rsg/main/traefik-complete/.env) file to the same directory. 
 > Enter your docker path (/srv/docker, ., etc), cloudflare info, timezone, root domain and database password within this file.
 4. Create your A records for your host. 
 5. Run ```docker compose up -d```
